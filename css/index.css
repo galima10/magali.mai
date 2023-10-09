@@ -507,7 +507,6 @@ body{
 }
 
 .portf-slider{
-    background-color: aqua;
     width: calc(100%*2);
     height: 100%;
     display: flex;
@@ -646,13 +645,14 @@ body{
 }
 
 .portf-slide-sous-desc1{
-    width: 50%;
+    width: calc(50% - 3px);
+    border-right: 3px solid #4ea27f;
     height: 100%;
     position: relative;
 }
 .portf-slide-sous-desc2{
-    
-    width: 50%;
+    border-right: 3px solid #4ea27f;
+    width: calc(50% - 3px);
     height: 100%;
     position: relative;
 }
