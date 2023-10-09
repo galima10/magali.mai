@@ -1,0 +1,875 @@
+body{
+    height: 5000px;
+}
+
+.scroll{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background-color: white;
+    border-top: 2px solid #86b9f3;
+    border-bottom: 2px solid #86b9f3;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333953;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+}
+.sections{
+    position: absolute;
+    bottom: 0;
+    height: 81px;
+    width: 100%;
+    background-color: transparent;
+}
+.section1{
+    background-color: transparent;
+    width: 100%;
+    height: 35%;
+    display: flex;
+}
+.section2{
+    background-color: transparent;
+    width: 100%;
+    height: 65%;
+    position: relative;
+    border-bottom: 5px solid #333953;
+}
+.sec-acc{
+    height: 100%;
+    width: calc((100%/6));
+    background-color: #450D77;
+    border: 2px solid #F5EAFF;
+    color: #F5EAFF;
+    border-bottom: transparent;
+    display: flex;
+    align-items: center;
+    text-indent: 50px;
+    font-weight: bold;
+    font-size: 130%;
+    cursor: pointer;
+}
+.sec{
+    height: 100%;
+    width: calc((100% - 100%/6)/4);
+    display: flex;
+    align-items: center;
+    text-indent: 50px;
+    font-weight: bold;
+    font-size: 130%;
+    cursor: pointer;
+}
+.grde-section{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: blueviolet;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    text-indent: 50px;
+    font-size: 250%;
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+}
+
+
+.ens{
+    width: 100%;
+    height: 5005px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.accueil{
+    background-color: #F5EAFF;
+    width: 100%;
+    height: calc(100%/6);
+    border-bottom: 1.6px solid #355881;
+}
+.profil{
+    border-bottom: 1.6px solid #355881;
+    border-top: 1.6px solid #355881;
+    background-color: #FFEAEE;
+    width: 100%;
+    height: calc((100% - 100%/6)/4);
+}
+.competences{
+    border-bottom: 1.6px solid #355881;
+    border-top: 1.6px solid #355881;
+    background-color: #FFF7E7;
+    width: 100%;
+    height: calc((100% - 100%/6)/4);
+}
+.portfolio{
+    border-bottom: 1.6px solid #355881;
+    border-top: 1.6px solid #355881;
+    background-color: #EAFFE9;
+    width: 100%;
+    height: calc((100% - 100%/6)/4);
+}
+.parcours{
+    border-top: 1.6px solid #355881;
+    background-color: #E4F6FF;
+    width: 100%;
+    height: calc((100% - 100%/6)/4);
+}
+
+
+.sec-prof{
+    background-color: #8F3748;
+    border: 2px solid #FFEAEE;
+    color: #FFEAEE;
+    border-bottom: transparent;
+}
+.sec-comp{
+    background-color: #956908;
+    color: #FFF7E7;
+    border: 2px solid #FFF7E7;
+    border-bottom: transparent;
+}
+.sec-portf{
+    background-color: #10660E;
+    color: #EAFFE9;
+    border: 2px solid #EAFFE9;
+    border-bottom: transparent;
+}
+.sec-parc{
+    background-color: #355881;
+    color: #E4F6FF;
+    border: 2px solid #E4F6FF;
+    border-bottom: transparent;
+}
+
+.grde-sec-acc{
+    background-color: #450D77;
+    color: #F5EAFF;
+}
+.grde-sec-prof{
+    background-color: #8F3748;
+    color: #FFEAEE;
+}
+.grde-sec-comp{
+    background-color: #956908;
+    color: #FFF7E7;
+}
+.grde-sec-portf{
+    background-color: #10660E;
+    color: #EAFFE9;
+}
+.grde-sec-parc{
+    background-color: #355881;
+    color: #E4F6FF;
+}
+
+
+
+
+.Titre{
+    position: relative;
+    top: 70px;
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: bold;
+    
+}
+.texte-acc{
+    color: #450D77;
+}
+.texte-prof{
+    color: #8F3748;
+}
+.texte-comp{
+    color: #956908;
+}
+.texte-portf{
+    color: #10660E;
+}
+.texte-parc{
+    color: #355881;
+}
+
+.slider-container{
+    background-color: transparent;
+    width: 100%;
+    height: 450px;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    border-top: 5px solid #10660E;
+    border-bottom: 5px solid #10660E;
+}
+.slider{
+    background-color: transparent;
+    width: 200%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    background-color: transparent;
+    height: 100%;
+    width: calc(100%/2);
+    position: relative;
+}
+
+/* .fleche-droite{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} */
+.fleche-gauche{
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    width: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 120%;
+    border-radius: 20px;
+    transition: 1s;
+    color: #EAFFE9;
+}
+.fleche-gauche:hover{
+    background-color: #10660E;
+    transform: scale(1.05);
+    opacity: 1;
+}
+.fleche-gauche:not(:hover){
+    background-color: #6bb569;
+    opacity: .5;
+}
+
+.portf-sections{
+    background-color: transparent;
+    width: calc(30% - 5px);
+    height: 90%;
+    border-right: 5px solid #10660E;
+}
+.portf-description{
+    background-color: transparent;
+    width: 70%;
+    height: 90%;
+    position: relative;
+}
+.portf-desc{
+    position: absolute;
+    background-color: transparent;
+    width: 90%;
+    height: 100%;
+}
+.portf-sec{
+    width: 90%;
+    height: 15%;
+    margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    transition: 1s;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 160%;
+    font-weight: bold;
+}
+.portf-sec:hover{
+    color: #EAFFE9;
+    background-color: #10660E;
+    border: 3px solid transparent;
+    transform: scale(1.03);
+}
+.portf-sec:not(:hover){
+    color: #10660E;
+    background-color: #EAFFE9;
+    border: 3px solid #10660E;
+}
+.slide1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.none{
+    display: none;
+}
+.opacity {
+    opacity: 0;
+    transition: opacity 1s; /* Ajoutez ici la propriété et la durée de la transition souhaitées */
+    pointer-events: none; /* Facultatif : désactive les événements de la souris sur les éléments avec la classe .none */
+}
+
+.opacity.visible {
+    opacity: 1;
+    pointer-events: auto; /* Facultatif : réactive les événements de la souris sur les éléments visibles */
+}
+
+.sous-slide-contenu{
+    background-color: transparent;
+    width: calc(50% - 2.5px);
+    height: 85%;
+    border-right: 2.5px solid #10660E;
+    margin-top: 1%;
+}
+.sous-slide-desc{
+    background-color: transparent;
+    width: calc(50% - 2.5px);
+    height: 85%;
+    border-left: 2.5px solid #10660E;
+    margin-top: 1%;
+}
+.slide2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sous-slide{
+    width: 100%;
+    height: 100%;
+}
+
+.contenu-prog{
+    background-color: transparent;
+}
+.contenu-anim{
+    background-color: transparent;
+}
+.contenu-mod{
+    background-color: transparent;
+}
+.desc-prog{
+    background-color: transparent;
+}
+.desc-anim{
+    background-color: transparent;
+}
+.desc-mod{
+    background-color: transparent;
+}
+
+
+.portf-ligne{
+    background-color: transparent;
+    width: 100%;
+    height: calc(85%/2);
+    display: flex;
+    align-items: center;
+}
+
+.portf-case{
+    height: 80%;
+    width: calc(100%/6);
+    margin-left: 2%;
+    margin-right: 2%;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.portf-case:hover{
+    color: #EAFFE9;
+    background-color: #10660E;
+    border: 3px solid #EAFFE9;
+}
+.portf-case:not(:hover){
+    color: #10660E;
+    background-color: #EAFFE9;
+    border: 3px solid #10660E;
+}
+
+.portf-titre{
+    background-color: transparent;
+    width: 95%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 250%;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 5px solid #10660E;
+    color: #10660E;
+}
+.portf-prog-contenu{
+    background-color: transparent;
+    width: 95%;
+    height: 85%;
+    font-size: 150%;
+    margin: auto;
+    overflow: auto;
+    color: #10660E;
+}
+.portf-anim-contenu{
+    background-color: transparent;
+    width: 95%;
+    height: 85%;
+    font-size: 150%;
+    margin: auto;
+    overflow: auto;
+    color: #10660E;
+}
+
+.portf-diffuseur{
+    background-color: #E0FFF2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.bibliotheque{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.mini-series{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-retour-diffuseur{
+    width: 10%;
+    height: 8%;
+    position: absolute;
+    top:1%;
+    left:2%;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 120%;
+    color: #E0FFF2;
+}
+.btn-retour-diffuseur:hover{
+    background-color: #34755A;
+    transform: scale(1.05);
+    opacity: 1;
+}
+.btn-retour-diffuseur:not(:hover){
+    background-color: #4ea27f;
+    opacity: .5;
+}
+
+.diffuseur-titre{
+    color: #34755A;
+    background-color: #E0FFF2;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 250%;
+    font-weight: bolder;
+    position: relative;
+    border-bottom: 5px solid #34755A;
+}
+
+.portf-slider-container{
+    background-color: transparent;
+    width: 80%;
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 5px solid #4ea27f;
+}
+
+.portf-slider{
+    background-color: aqua;
+    width: calc(100%*2);
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.portf-slide{
+    background-color: black;
+    width: calc(100%/2);
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.portf-fleche-gauche{
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portf-fleche-gauche:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    opacity: 1;
+}
+.portf-fleche-gauche:not(:hover){
+    transition: 1s;
+    opacity: .8;
+}
+
+.portf-fleche-droite{
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    width: 3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portf-fleche-droite:hover{
+    transition: 1s;
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+}
+.portf-fleche-droite:not(:hover){
+    transition: 1s;
+    transform: rotate(180deg);
+    opacity: .8;
+}
+
+.css-fleche-gauche{
+    width: 70%;
+    height: 30%;
+}
+.css-fleche-droite{
+    width: 70%;
+    height: 30%;
+}
+.serie-titre{
+    color: #34755A;
+    background-color: transparent;
+    width: 80%;
+    height: 30%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 190%;
+    font-weight: bold;
+}
+.serie{
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    height: 60%;
+    margin-top: 5%;
+}
+
+.portf-slide-image{
+    background-color: black;
+    height: 100%;
+    width: 30%;
+    position: relative;
+}
+.portf-slide-desc{
+    background-color: transparent;
+    height: 100%;
+    width: 70%;
+}
+.ouvr1-banniere-ep-1{
+    background-image: url('../images/bannière\ hist1\ chap1.jpg');
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: 10%;
+    background-repeat: no-repeat;
+    color: white;
+}
+.unref-banniere-ep-1{
+    background-image: url('../images/hogwarts\ legacy.jpg');
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.ouvr1-gros-titre-ep-1{
+    background-image: url('../images/titre\ hist1\ chap1.webp');
+    background-size: 95%;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.uneref-gros-titre-ep-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uneref-titre-ep-1{
+    width: 80%;
+    color: white;
+    font-weight: bold;
+    font-size: 170%;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.portf-slide-sous-desc1{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.portf-slide-sous-desc2{
+    
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.desc-episode-titre{
+    background-color: #34755a99;
+    width: 100%;
+    height: 35%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+.desc-episode-contenu{
+    background-color: #34755a99;
+    width: 100%;
+    height: 65%;
+    position: relative;
+    font-size: 120%;
+}
+
+.info{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+.info:hover{
+    background-color: #34755A;
+    border: 3px solid transparent;
+    color: #E0FFF2;
+}
+.info:not(:hover){
+    background-color: transparent;
+    border: 3px solid #34755A;
+    color: #34755A;
+}
+.synopsis{
+    position: absolute;
+    background-color: #34755A;
+    width: 70%;
+    height: 150%;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    font-weight: lighter;
+    font-size: 90%;
+    color: #E0FFF2;
+}
+.synopsis::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Ajustez la valeur en fonction de la taille de la pointe du triangle */
+    right: 12px;
+    transform: rotate(0deg); /* Rotation du triangle */
+    border-width: 0 15px 20px 15px;
+    border-style: solid;
+    border-color: transparent transparent #34755A transparent;
+}
+
+.aller-voir{
+    background-color: #E0FFF2;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 30%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+    color: #34755A;
+    font-size: 110%;
+    font-weight: bold;
+}
+.aller-voir:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
+.aller-voir:not(:hover){
+    opacity: .8;
+}
+.duree{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    color: white;
+    font-weight: bold;
+}
+
+.slide1-desc-titre{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    background-color: transparent;
+    width: 40%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 200%;
+    z-index: 1;
+    opacity: 0;
+    color: #10660E;
+}
+.slide1-desc-contenu{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    background-color: transparent;
+    width: calc(100% - 25%);
+    height: calc(100% - 35%);
+    font-size: 150%;
+}
+
+li{
+    color: #10660E;
+    margin-bottom: 2%;
+}
+
+.portf-barre-progress-prog-1{
+    position: absolute;
+    background-color: #6bb569;
+    width: 0;
+    height: 10px;
+    top: 25px;
+    border-radius: 0 50px 0 0;
+}
+.portf-barre-progress-prog-2{
+    position: absolute;
+    background-color: #6bb569;
+    width: 10px;
+    height: 0;
+    top: 35px;
+    left: 60px;
+    border-radius: 0 0 0 50px;
+}
+.portf-barre-progress-prog-3{
+    position: absolute;
+    background-color: #6bb569;
+    width: 0;
+    height: 10px;
+    top: 85px;
+    left: 70px;
+    border-radius: 0 50px 50px 0;
+}
+
+
+.portf-barre-progress-anim-1{
+    position: absolute;
+    background-color: #6bb569;
+    width: 0;
+    height: 10px;
+    top: 105px;
+    border-radius: 0 0 50px 0;
+}
+.portf-barre-progress-anim-2{
+    position: absolute;
+    background-color: #6bb569;
+    width: 10px;
+    height: 0;
+    top: 105px;
+    left: 60px;
+    border-radius: 50px 0 0 0;
+}
+.portf-barre-progress-anim-3{
+    position: absolute;
+    background-color: #6bb569;
+    width: 0;
+    height: 10px;
+    top: 85px;
+    left: 70px;
+    border-radius: 0 50px 50px 0;
+}
+
+#li-prog{
+    opacity: 0;
+}
+#li-anim{
+    opacity: 0;
+}
+
+.voir-contenu{
+    text-decoration: none; 
+    color: black; 
+    display: flex; 
+    height: 50px; 
+    width: 150px; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 80%;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    left: 2%;
+    transition: 1s;
+}
+.voir-contenu:hover{
+    color: #EAFFE9;
+    background-color: #10660E;
+    border: 3px solid transparent;
+    transform: scale(1.05);
+}
+.voir-contenu:not(:hover){
+    color: #10660E;
+    background-color: #EAFFE9;
+    border: 3px solid #10660E;
+}
